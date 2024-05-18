@@ -13,7 +13,7 @@ namespace GlobalAPI
 
             builder.Services.AddControllers();
             builder.Services.AddDbContext<GlobalDbContext>(); // Entity Framework DbContext'i ekleyin
-            builder.Services.AddScoped<HireusService>(); // HireusService'yi ekleyin
+            builder.Services.AddScoped<ContactService>(); // HireusService'yi ekleyin
 
             // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
             builder.Services.AddEndpointsApiExplorer();

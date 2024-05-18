@@ -10,6 +10,6 @@ namespace DataAccess
             optionsBuilder.UseSqlServer(@"Server=DESKTOP-F160INQ;Database=GlobalDb;Trusted_Connection=true");
         }
 
-        public DbSet<Hireus> Hireuses { get; set; }
+        public DbSet<Contact> Contacts { get; set; }
     }
 }
