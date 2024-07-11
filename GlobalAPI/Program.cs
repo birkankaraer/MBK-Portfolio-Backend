@@ -32,11 +32,12 @@ namespace GlobalAPI
             {
                 options.AddDefaultPolicy(builder =>
                 {
-                    builder.WithOrigins("https://mustafabirkankaraer.vercel.app")
+                    builder.WithOrigins("http://mustafabirkankaraer.vercel.app")
                            .AllowAnyHeader()
                            .AllowAnyMethod();
                 });
             });
+
 
             var app = builder.Build();
 
@@ -51,7 +52,12 @@ namespace GlobalAPI
                 });
             }
 
-            app.UseCors(); // Enable CORS
+            app.UseCors(builder =>
+            {
+                builder.AllowAnyOrigin()
+                       .AllowAnyHeader()
+                       .AllowAnyMethod();
+            });
 
             app.UseHttpsRedirection();
 
