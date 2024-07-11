@@ -12,11 +12,15 @@ API projemi ilk başta Azure bulut sistemini kullanarak deploy ettim ve aynı ş
 
 Initially, I deployed my API project using the Azure cloud system and similarly deployed the MSSQL database, deploying both components. After my free usage period ended, I used the free hosting service of MonsterASP.net and similarly deployed my API application and database.
 
-## ⚠️ Sorunlar / Issues
+## ⚠️ Sorunlar (Çözüldü) / Issues (Solved)
 
 Bu kullandığım ücretsiz hosting servisi HTTP protokolü üzerinden canlıya aldı projemi ancak web arayüzüm HTTPS üzerinde yayında olduğu için mixed content hatası alıyorum. Bu yüzden backend servisim düzgün çalışmıyor.
 
 This free hosting service published my project using the HTTP protocol, but since my web interface is live on HTTPS, I get a mixed content error. Therefore, my backend service does not work properly.
+
+Mixed content hatası yaşamadan önce HTTP protokolünde olan backend API servisimi HTTPS protokolüne taşıdım ve bu sorunu çözdüm.
+
+Before encountering mixed content issues, I migrated the backend API service from HTTP to HTTPS protocol, resolving this issue.
 
 ## 🛠️ Teknolojiler / Technologies
 
